@@ -1,0 +1,31 @@
+{{#if isEditing}}
+  <!-- {{partial 'post/edit'}} -->
+  <form>
+  <div class="form-group">
+    <label for="body">Question</label>
+    {{input id="body" class="form-control" value=body}}
+  </div>
+  <div class="form-group">
+    <label for="description">Description</label>
+    {{input id="description" class="form-control" value=description}}
+  </div>
+  <div class="form-group">
+    <label for="name">Author</label>
+    {{input id="name" class="form-control" value=name}}
+  </div>
+  <button class="btn btn-success" {{action 'save'}}>Edit</button>
+</form>
+{{else}}
+  <button class="btn btn-primary" {{action 'edit'}}>Edit</button>
+  <button class="btn btn-danger" {{action 'delete'}}>Delete</button>
+{{/if}}
+
+
+<h3>Name: {{model.name}}</h3>
+<h3>Description: {{model.description}}</h3>
+
+<hr>
+
+<div class="body">
+    {{model.body}}
+</div>
