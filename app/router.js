@@ -9,6 +9,7 @@ Router.map(function() {
   this.route("about");
   this.resource("questions", function() {
     this.route('new');
+    this.resource('question', {path: ':question_id'});
   });
 });
 
