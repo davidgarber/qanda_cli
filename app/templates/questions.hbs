@@ -1,1 +1,9 @@
+<div class="new-msg-link">{{#link-to 'questions.new'}}Ask a new question{{/link-to}}</div>
+
 {{outlet}}
+
+{{#each question in model}}
+
+  <div class="each-msg">{{question.name}}: {{question.body}}</div>
+
+{{/each}}

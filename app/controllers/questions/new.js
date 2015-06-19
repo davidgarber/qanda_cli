@@ -5,12 +5,12 @@ export default Ember.Controller.extend({
     addQuestion: function() {
       var newQuestion = this.store.createRecord('question', {
         name: this.get('name'),
-        question: this.get('question')
+        body: this.get('body')
       });
       newQuestion.save();
       this.setProperties({
         name:'',
-        question:''
+        body:''
       });
     }
   }

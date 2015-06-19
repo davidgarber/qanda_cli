@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'qanda',
     environment: environment,
-    firebase: 'https://qanda.firebaseio.com/',
+    firebase: 'https://qanda-embercli.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
