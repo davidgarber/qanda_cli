@@ -1,3 +1,9 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<div id="header">
+  Questions and Answers
+  {{#link-to 'about'}}About{{/link-to}}
+  {{#link-to 'questions'}}Questions{{/link-to}}
+</div>
 
-{{outlet}}
+<div id="chat-body">
+  {{outlet}}
+</div>
