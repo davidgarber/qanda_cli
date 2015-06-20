@@ -1,5 +1,21 @@
 <div class="new-msg-form">
-  {{input type="text" placeholder="Name" value=name class="name-input"}}
-  {{input type="text" placeholder="Answer" value=body class="msg-input"}}
-  <button {{action 'addAnswer'}} class="submit">Submit</button>
+    {{input type="text" placeholder="Name" value=user class="name-input"}}
+  {{input type="text" placeholder="Answer" value=response class="msg-input"}}
+  <button {{action 'saveAnswer'}} class="submit">Submit</button>
 </div>
+<!-- <form>
+  <div class="form-group">
+    <label for="body">Question</label>
+    {{input id="body" class="form-control" value=body}}
+  </div>
+  <div class="form-group">
+    <label for="description">Description</label>
+    {{input id="description" class="form-control" value=description}}
+  </div>
+  <div class="form-group">
+    <label for="name">Author</label>
+    {{input id="name" class="form-control" value=name}}
+  </div>
+
+  <button class="btn btn-primary" {{action 'save'}}>Save</button>
+</form> -->

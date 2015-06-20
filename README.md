@@ -1,7 +1,11 @@
-# Qanda
+# Q and A
+<h2>by</h2>
+David Garber
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+## Description
+
+Q and A allows a user to post, edit and delete a question. Ideally, one would be able to post an answer with a timestamp, as well. Alas,
+I am not able to get the answer section to work.
 
 ## Prerequisites
 
@@ -50,4 +54,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
